@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "*.ejs": "html",
+        "kernel.C": "cpp",
+        "scheduler.C": "cpp",
+        "thread.C": "cpp",
+        "simple_timer.C": "cpp",
+        "interrupts.C": "cpp",
+        "machine.C": "cpp",
+        "simple_keyboard.C": "cpp",
+        "console.C": "cpp"
+    }
+}

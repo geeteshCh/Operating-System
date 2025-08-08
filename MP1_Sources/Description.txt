@@ -1,0 +1,29 @@
+PROCESS FOR GDB INTEGRATION
+
+1. Downloaded the tar file containing the gdb integration ( Had to install libxrandr-dev as well)
+2. Went to the bochs folder and runned the following command for configuring bochs
+    sudo ./configure --enable-gdb-stub
+3. Tried to run sudo make but got an error and to resolve the issue, installed libxandr-dev and runned the following commands
+    sudo make
+    sudo make install
+4. Changed the makefile to add -g file. Command to change the make file
+    nano makefile
+5. Removed the first line in the linker file to change the output from binary to elf
+    nano linker.ld
+6. Runned the make file and copied to the img file
+    make -f makefile
+    sh copykernel.sh
+7. Enabled the  GDB stub in Bochs configuration file by editing bochsrc.bxrc file
+    nano bochsrc.bxrc
+8. Runned the bochsrc.bxrc file
+    bochs -f bochsrc.bxrc
+9. Opened a new terminal window and runned the following commands for connecting from GDB
+    gdb kernel.elf
+    (gdb) set architecture i386:x86-64:intel
+    (gdb) target remote localhost:1234
+    (gdb) b main()
+    (gdb) c
+
+
+
+

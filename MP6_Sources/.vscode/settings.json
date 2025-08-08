@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "*.ejs": "html",
+        "thread.C": "cpp",
+        "scheduler.C": "cpp",
+        "simple_disk.C": "cpp",
+        "blocking_disk.C": "cpp",
+        "kernel.C": "cpp",
+        "mirror_disk.C": "cpp",
+        "console.C": "cpp"
+    }
+}

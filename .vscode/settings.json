@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "*.ejs": "html",
+        "page_table.C": "cpp",
+        "cont_frame_pool.C": "cpp",
+        "console.C": "cpp",
+        "kernel.C": "cpp"
+    }
+}
